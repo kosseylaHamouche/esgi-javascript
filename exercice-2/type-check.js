@@ -11,7 +11,7 @@ function type_check_v1(param, type){
 	else if(typeof param === "boolean" && typeof type === "boolean") {
 		return true;
 	}
-	else if(typeof param === "object" && typeof type === "object") {
+	else if(typeof param === "object" && param != null && typeof type === "object") {
 		return true;
 	}
 	else {
