@@ -5,6 +5,7 @@ function type_check_v1(param, type){
 	else {
 		return false;
 	}
+}
 
 function type_check_v2(){
 
