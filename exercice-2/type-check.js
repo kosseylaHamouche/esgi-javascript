@@ -23,6 +23,9 @@ function type_check_v1(param, type){
 	else if(Array.isArray(param) && type === "Array") {
 		return true;
 	}
+	else if(typeof param === "function" && type === "function") {
+		return true;
+	}
 	else {
 		return false;
 	}
