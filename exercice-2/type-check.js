@@ -17,7 +17,7 @@ function type_check_v1(param, type){
 	else if(typeof param === "object" && type === "object") {
 		return true;
 	}
-	else if(param === undefined) {
+	else if(param === undefined || param === null) {
 		return true;
 	}
 	else if(Array.isArray(param) && type === "Array") {
